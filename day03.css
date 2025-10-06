@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background: url("https://images.pexels.com/photos/32683773/pexels-photo-32683773.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(50px);
+    display: flex;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 300px;
+    width: 350px;
+    margin-top: 100px;
+    position: relative;
+    transition: all ease 0.5s;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border: 3px solid white;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bottom{
+    height: 50%;
+    width: 100%;
+    background:linear-gradient(transparent, black);
+    position: absolute;
+    bottom: -50%;
+    transition: all ease 0.5s;
+}
+
+.card:hover .bottom{
+    bottom: 0%;
+}
+
+button{
+    height: 40px;
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 20px;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
